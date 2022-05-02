@@ -19,7 +19,7 @@ Made a lin_alg() function to calculate effective transition matrix using damping
 ###### Procedure
 Implemented function power_iter() Matrix M is multiplied with itself for given input number of iterations and further multiplied with the initial equal probability vector
 
-## convergence in poweriteration
+## convergence in power iteration
 No of iterations until pageranks will have no change in their order of ranks
 ###### Procedure
 Implemented function conv_pi() that performs iterations until convergence.
@@ -28,6 +28,7 @@ Implemented function conv_pi() that performs iterations until convergence.
 i/p:
 
 no of vertices <space> no of edges \n
+
 give all the directed connections between the nodes.
   
 Test case:11 20
