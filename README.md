@@ -7,22 +7,33 @@ P Sree Vishnusai Karthik (2018A3PS0526H)
 
 Aryan Surana (2018B4A70937H)	
 
-# BITS-F-469-Assignment-2-PageRank-and-HITS-Implementation
+# BITS-F-469-Assignment-2B-HITS-Implementation
+Implementing HITS algorithm in python.
+Given a query, we can obtain hub scores and authority scores for web pages.
 
+###### procedure
+from a given .gpickle file we read the graph and create a list of all page contents using networkx library. We then create base set nd root set, using them we create an adjacency matrix. Using the adjacency matrix we find hub and authority scores in the form of python lists, namely 'u'  and 'v' by multiplying within a loop until steady-state values are reached.
+
+## Example
+i/p: query word
+
+![7d3e9177-523e-40ff-b61e-d9bb9dbf9320](https://user-images.githubusercontent.com/74662983/166210203-9138ac6e-7699-4662-858c-959429919e66.jpg)
+
+![7690afe2-a909-4389-86cb-993b7b456212](https://user-images.githubusercontent.com/74662983/166210217-0f5bf71a-2285-4215-abca-9f7b09d1efde.jpg)
+
+# BITS-F-469-Assignment-2A-PageRank-Implementation
+implementing PageRank algorithm in python.
 ## Using algebra packages
-MX=X implementation using numpy.linalg wheere M is the transition matrix and X is the eigen vector containing page ranks
+MX=X implementation using numpy.linalg where M is the transition matrix and X is the eigen vector containing page ranks.
 ###### Procedure
-Made a lin_alg() function to calculate effective transition matrix using damping factor and solved for pageranks
+Made a lin_alg() function to calculate effective transition matrix using damping factor and solved for pageranks.
 
 ## Using power iteration on transition matrix
-(M)^k x V implementation using poweriteration function
+(M)^k x V implementation using poweriteration function.
 ###### Procedure
-Implemented function power_iter() Matrix M is multiplied with itself for given input number of iterations and further multiplied with the initial equal probability vector
+Implemented function power_iter() Matrix M is multiplied with itself for given input number of iterations and further multiplied with the initial equal probability vector.
 
-## convergence in power iteration
-No of iterations until pageranks will have no change in their order of ranks
-###### Procedure
-Implemented function conv_pi() that performs iterations until convergence.
+Added a conv_pi() function to iterate until convergence.
 
 ## example
 i/p:
@@ -31,39 +42,7 @@ no of vertices <space> no of edges \n
 
 give all the directed connections between the nodes.
   
-Test case:11 20
-1 2
-2 1
-2 3
-3 2
-3 4
-4 3
-4 5
-5 4
-5 6
-6 5
-6 7
-7 6
-7 8
-8 7
-8 9
-9 8
-9 10
-10 9
-10 11
-11 10
-
-O/p:
-  
-[8.65697288 9.50309398 9.11157012 9.09194474 9.09096113 9.0909143
- 9.09096113 9.09194474 9.11157012 9.50309398 8.65697288]
-[8.65697288 9.50309398 9.11157012 9.09194474 9.09096113 9.0909143
- 9.09096113 9.09194474 9.11157012 9.50309398 8.65697288]
-2 iterations until convergence
-[8.65681818 9.50340909 9.11136364 9.09204545 9.09090909 9.09090909
- 9.09090909 9.09204545 9.11136364 9.50340909 8.65681818]
-time :0.00015860899975450593
-  
+![31b36278-6f47-4fa1-ad6b-dbbff399b434](https://user-images.githubusercontent.com/74662983/166210356-1b0c4e90-8c5c-4a0b-96be-2d1555735363.jpg)
 
   
 
