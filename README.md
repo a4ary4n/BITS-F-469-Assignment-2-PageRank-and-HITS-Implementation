@@ -27,8 +27,7 @@ Implemented function conv_pi() that performs iterations until convergence.
 ## example
 i/p:
 
-no of vertices <space> no of edges 
->>Enter
+no of vertices <space> no of edges \n
 give all the directed connections between the nodes.
   
 Test case:11 20
